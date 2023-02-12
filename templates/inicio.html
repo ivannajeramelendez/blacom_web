@@ -1,0 +1,386 @@
+{% extends "layout.html" %}
+{% block content %}
+  <!-- ======= Header ======= -->
+  <header id="header" class="fixed-top ">
+    <div class="container d-flex align-items-center">
+
+      <a href="/" class="logo mr-auto"><img src="{{ url_for('static', filename='imagenes/l1.1.png') }}" alt="" class="img-fluid"></a>
+
+      <nav class="nav-menu d-none d-lg-block">
+        <ul>
+          <li class="active"><a href="/">Inicio</a></li>
+          <li class="drop-down"><a href="">Soluciones</a>
+            <ul>
+              <li><a href="{{ url_for('diseno') }}">Diseño de Red</a></li>
+              <li class="drop-down"><a href="{{ url_for('cobertura') }}">Cobertura</a>
+                <ul>
+                  <li><a href="{{ url_for('factibilidad') }}">Factibilidad</a></li>
+                  <li><a href="{{ url_for('soporte') }}">Soporte Tecnico</a></li>
+                </ul>
+              </li>
+              <li class="drop-down"><a href="#">Internet</a>
+                <ul>
+                  <li><a href="{{ url_for('residencial') }}">Residencial</a></li>
+                  <li><a href="{{ url_for('empresarial') }}">Empresarial</a></li>
+                  <li><a href="{{ url_for('dedicado') }}">Dedicado</a></li>
+                </ul>
+              </li>
+              <li><a href="{{ url_for('comunicaciones') }}">Comunicaciones Unificadas</a></li>
+              <li><a href="{{ url_for('isp') }}">ISP</a></li>
+              <li><a href="{{ url_for('telefonia') }}">Servidores de Telefonia</a></li>
+              <li><a href="{{ url_for('vigilancia') }}">Vigilancia IP</a></li>
+            </ul>
+          </li>
+          <li><a href="{{ url_for('contacto') }}">Contacto</a></li>
+
+        </ul>
+      </nav><!-- .nav-menu -->
+
+      <a href="#pricing" class="get-started-btn scrollto">Paquetes</a>
+
+    </div>
+  </header><!-- Fin Header -->
+
+  <!-- ======= Banner ======= -->
+  <section id="hero" class="d-flex align-items-center">
+
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-6 d-flex flex-column justify-content-center pt-4 pt-lg-0 order-2 order-lg-1" data-aos="fade-up" data-aos-delay="200">
+          <h1>La mejor forma de estar conectado</h1>
+          <h2>Internet de Banda Ancha</h2>
+          <div class="d-lg-flex">
+            <a href="#pricing" class="btn-get-started scrollto">Contrata Aquí</a>
+          </div>
+        </div>
+        <div class="col-lg-6 order-1 order-lg-2 hero-img" data-aos="zoom-in" data-aos-delay="200">
+          <img src="static/imagenes/banner.svg" class="img-fluid animated" alt="">
+        </div>
+      </div>
+    </div>
+
+  </section><!-- Fin Banner -->
+
+  <main id="main">
+
+    <!-- ======= Barra Separacion ======= -->
+    <section id="cliens" class="cliens section-bg">
+      <div class="container">
+
+      </div>
+    </section><!-- Fin Barra -->
+
+    <!-- ======= Porque Blacom ======= -->
+    <section id="about" class="about">
+      <div class="container" data-aos="fade-up">
+
+        <div class="section-title">
+          <h2>¿Por qué elegir Blacom?</h2>
+        </div>
+
+        <div class="row content">
+          <div class="col-lg-6">
+            <p>
+              La moderna red inalámbrica de BLACOM , es el resultado de la combinación entre la última generación de equipos inalámbricos, el conocimiento de
+            </p>
+          </div>
+          <div class="col-lg-6 pt-4 pt-lg-0">
+            <p>
+              nuestro equipo de profesionales, la constante actualización de nuestra red y la experiencia adquirida a través de los años de trabajo en aplicaciones de redes alámbricas e inalámbricas.
+            </p>
+            <a href="{{ url_for('nosotros') }}" class="btn-learn-more">Lee Más</a>
+          </div>
+        </div>
+
+      </div>
+    </section><!-- Fin Porque Blacom -->
+
+    <!-- ======= Why Us Section ======= -->
+    <section id="why-us" class="why-us section-bg">
+      <div class="container-fluid" data-aos="fade-up">
+
+        <div class="row">
+
+          <div class="col-lg-7 d-flex flex-column justify-content-center align-items-stretch  order-2 order-lg-1">
+
+            <div class="content">
+              <h3>Lo que nos hace diferentes en <strong>Blacom</strong></h3>
+              <p>
+                 Contamos con la mejor cobertura y cualidades que podrias encontar
+              </p>
+            </div>
+
+            <div class="accordion-list">
+              <ul>
+                <li>
+                  <a data-toggle="collapse" class="collapse" href="#accordion-list-1"><span>*</span> Siempre en línea <i class="bx bx-chevron-down icon-show"></i><i class="bx bx-chevron-up icon-close"></i></a>
+                  <div id="accordion-list-1" class="collapse show" data-parent=".accordion-list">
+                    <p>
+                      Conexión a Internet 24 Horas, 7 días de la semana 365 Días al año.
+                    </p>
+                  </div>
+                </li>
+
+                <li>
+                  <a data-toggle="collapse" href="#accordion-list-2" class="collapsed"><span>*</span> Llegamos a donde nadie llega <i class="bx bx-chevron-down icon-show"></i><i class="bx bx-chevron-up icon-close"></i></a>
+                  <div id="accordion-list-2" class="collapse" data-parent=".accordion-list">
+                    <p>
+                      Cobertura en Zonas donde ningún otro proveedor llega, zonas apartadas, difíciles o nuevos fraccionamientos.
+                    </p>
+                  </div>
+                </li>
+
+                <li>
+                  <a data-toggle="collapse" href="#accordion-list-3" class="collapsed"><span>*</span> Soporte Técnico <i class="bx bx-chevron-down icon-show"></i><i class="bx bx-chevron-up icon-close"></i></a>
+                  <div id="accordion-list-3" class="collapse" data-parent=".accordion-list">
+                    <p>
+                        Atención Telefónica, atención en línea mediante nuestra web, Portal de Clientes, reporte mediante SMS
+                    </p>
+                  </div>
+                </li>
+
+                <li>
+                  <a data-toggle="collapse" href="#accordion-list-4" class="collapsed"><span>*</span> Pago mensual <i class="bx bx-chevron-down icon-show"></i><i class="bx bx-chevron-up icon-close"></i></a>
+                  <div id="accordion-list-4" class="collapse" data-parent=".accordion-list">
+                    <p>
+                        Pago mensual Fijo
+                    </p>
+                  </div>
+                </li>
+
+                  <li>
+                  <a data-toggle="collapse" href="#accordion-list-5" class="collapsed"><span>*</span> Descuento <i class="bx bx-chevron-down icon-show"></i><i class="bx bx-chevron-up icon-close"></i></a>
+                  <div id="accordion-list-5" class="collapse" data-parent=".accordion-list">
+                    <p>
+                        Descuento en pago semestral o anual.
+                    </p>
+                  </div>
+                </li>
+
+                  <li>
+                  <a data-toggle="collapse" href="#accordion-list-6" class="collapsed"><span>*</span> Confiabilidad <i class="bx bx-chevron-down icon-show"></i><i class="bx bx-chevron-up icon-close"></i></a>
+                  <div id="accordion-list-6" class="collapse" data-parent=".accordion-list">
+                    <p>
+                        Confiabilidad y estabilidad del Servicio.
+                    </p>
+                  </div>
+                </li>
+
+              </ul>
+            </div>
+
+          </div>
+
+          <div class="col-lg-5 align-items-stretch order-1 order-lg-2 img" style='background-image: url("static/imagenes/calidad.svg");' data-aos="zoom-in" data-aos-delay="150">&nbsp;</div>
+        </div>
+
+      </div>
+    </section><!-- End Why Us Section -->
+
+    <!-- ======= Mensaje  ======= -->
+    <section id="cta" class="cta">
+      <div class="container" data-aos="zoom-in">
+
+        <div class="row">
+          <div class="col-lg-9 text-center text-lg-left">
+            <h3>No dudes en preguntar</h3>
+            <p> Si tienes alguna duda o un plan de desarrollo, comunicate con nostros para ayudarte a seguir avanzando.</p>
+          </div>
+          <div class="col-lg-3 cta-btn-container text-center">
+            <a class="cta-btn align-middle" href="#">Mensaje</a>
+          </div>
+        </div>
+
+      </div>
+    </section><!-- Fin Mensaje  -->
+
+    <!-- ======= Precio Seleccion ======= -->
+    <section id="pricing" class="pricing">
+      <div class="container" data-aos="fade-up">
+
+        <div class="section-title">
+          <h2>Paquetes</h2>
+          <p>Seleciona el paquete que mejor se adapte a ti.</p>
+        </div>
+
+        <div class="row">
+
+          <div class="col-lg-4" data-aos="fade-up" data-aos-delay="100">
+            <div class="box">
+              <h3>Residencial</h3>
+              <h4><sup>$</sup>289*<span>al mes*</span></h4>
+              <ul>
+                <li><i class="bx bx-check"></i> Conexión permanente a internet</li>
+                <li><i class="bx bx-check"></i> No requiere de línea Telefónica</li>
+                <li><i class="bx bx-check"></i> Atención personalizada</li>
+                <li><i class="bx bx-check"></i> Cobertura en zonas complicadas*</li>
+                <li><i class="bx bx-check"></i> Soporte 24/7</li>
+                <li><i class="bx bx-check"></i> Hasta 5 Mbps*</li>
+                <li><i class="bx bx-check"></i> Desde $289*</li>
+
+              </ul>
+              <a href="/internet-residencial" class="buy-btn">Contratar</a>
+            </div>
+          </div>
+
+          <div class="col-lg-4 mt-4 mt-lg-0" data-aos="fade-up" data-aos-delay="200">
+            <div class="box featured">
+              <h3>Empresarial</h3>
+              <h4><sup>$</sup>399*<span>al mes*</span></h4>
+              <ul>
+                <li><i class="bx bx-check"></i> Conexión permanente a internet</li>
+                <li><i class="bx bx-check"></i> No requiere de línea Telefónica</li>
+                <li><i class="bx bx-check"></i> Atención personalizada</li>
+                <li><i class="bx bx-check"></i> Cobertura en zonas complicadas*</li>
+                <li><i class="bx bx-check"></i> Soporte 24/7</li>
+                <li><i class="bx bx-check"></i> Hasta 50 Mbps*</li>
+                <li><i class="bx bx-check"></i> Desde $399*</li>
+              </ul>
+              <a href="/internet-empresarial" class="buy-btn">Contratar</a>
+            </div>
+          </div>
+
+          <div class="col-lg-4 mt-4 mt-lg-0" data-aos="fade-up" data-aos-delay="300">
+            <div class="box">
+              <h3>Dedicado</h3>
+              <h4><sup>$</sup>3,400*<span>al mes*</span></h4>
+              <ul>
+                <li><i class="bx bx-check"></i> Conexión permanente a internet</li>
+                <li><i class="bx bx-check"></i> No requiere de línea Telefónica</li>
+                <li><i class="bx bx-check"></i> Atención personalizada</li>
+                <li><i class="bx bx-check"></i> Enlace a Sucursales*</li>
+                <li><i class="bx bx-check"></i> Soporte 24/7</li>
+                <li><i class="bx bx-check"></i> Hasta 1000 Mbps*</li>
+                <li><i class="bx bx-check"></i> Desde $3,400*</li>
+              </ul>
+              <a href="/internet-dedicado" class="buy-btn">Contratar</a>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section><!-- Fin Precio Seleccion -->
+
+    <!-- ======= Preguntas Frecuentes ======= -->
+    <section id="faq" class="faq section-bg">
+      <div class="container" data-aos="fade-up">
+
+        <div class="section-title">
+          <h2>Preguntas Frecuentes</h2>
+          <p>Algunas respuestas a las preguntas màs solicitadas.</p>
+        </div>
+
+        <div class="faq-list">
+          <ul>
+            <li data-aos="fade-up" data-aos-delay="100">
+              <i class="bx bx-help-circle icon-help"></i> <a data-toggle="collapse" class="collapse" href="#faq-list-1">¿Cómo Funciona BLACOM? <i class="bx bx-chevron-down icon-show"></i><i class="bx bx-chevron-up icon-close"></i></a>
+              <div id="faq-list-1" class="collapse show" data-parent=".faq-list">
+                <p align="justify">
+                  BLACOM utiliza tecnología wireless de última generación, punto a punto y punto multipunto, que es de las más confiables y estables para entregar internet de banda ancha al usuario final a un excelente precio.<br><br>
+                  Mediante células de distribución (torres de comunicación) se entrega el internet de banda ancha al usuario colocando una antena receptora generalmente en el techo de su domicilio y utilizando radiofrecuencias para que
+                  la señal sea emitida viaje y sea recibida, aquí se añade un esquema del funcionamiento.
+                </p>
+              </div>
+            </li>
+
+            <li data-aos="fade-up" data-aos-delay="200">
+              <i class="bx bx-help-circle icon-help"></i> <a data-toggle="collapse" href="#faq-list-2" class="collapsed">¿Qué es la tecnología Wireless? <i class="bx bx-chevron-down icon-show"></i><i class="bx bx-chevron-up icon-close"></i></a>
+              <div id="faq-list-2" class="collapse" data-parent=".faq-list">
+                <p align="justify">
+                  Las redes inalámbricas o wireless son una tecnología normalizada por el IEEE que permite montar redes locales sin emplear ningún tipo de cableado, utilizando infrarrojos u ondas de radio a frecuencias desnormalizadas (de libre utilización).
+                </p>
+              </div>
+            </li>
+
+            <li data-aos="fade-up" data-aos-delay="300">
+              <i class="bx bx-help-circle icon-help"></i> <a data-toggle="collapse" href="#faq-list-3" class="collapsed">¿Necesito tener una Línea Telefónica? <i class="bx bx-chevron-down icon-show"></i><i class="bx bx-chevron-up icon-close"></i></a>
+              <div id="faq-list-3" class="collapse" data-parent=".faq-list">
+                <p align="justify">
+                  No necesitas una línea telefónica, la ventaja del uso de esta tecnología, es que no requieres contratar una línea telefónica para poder recibir el servicio de internet de banda ancha, como sucede con las compañías de teléfono o de cable que forzosamente tienes que contratar otro servicio
+                  ya sea de teléfono o televisión y terminas pagando siempre más.<br><br> Con BLACOM solo contratas el servicio de Internet de Banda Ancha y tu pago siempre es fijo, además dicho sea de paso actualmente el Internet cubre todas las necesidades de comunicación.
+                </p>
+              </div>
+            </li>
+
+            <li data-aos="fade-up" data-aos-delay="400">
+              <i class="bx bx-help-circle icon-help"></i> <a data-toggle="collapse" href="#faq-list-4" class="collapsed">¿Qué velocidad máxima puedo obtener? <i class="bx bx-chevron-down icon-show"></i><i class="bx bx-chevron-up icon-close"></i></a>
+              <div id="faq-list-4" class="collapse" data-parent=".faq-list">
+                <p align="justify">
+                  Con esta tecnología es posible obtener velocidades que van desde 1 Mbps hasta los 1000 Mbps. Esto depende del tipo de equipo usado, y de los requerimientos del cliente.
+                </p>
+              </div>
+            </li>
+
+            <li data-aos="fade-up" data-aos-delay="500">
+              <i class="bx bx-help-circle icon-help"></i> <a data-toggle="collapse" href="#faq-list-5" class="collapsed">¿Qué necesito para contratar el servicio? <i class="bx bx-chevron-down icon-show"></i><i class="bx bx-chevron-up icon-close"></i></a>
+              <div id="faq-list-5" class="collapse" data-parent=".faq-list">
+                <p align="justify">
+                  Programar tu instalación gratis en este sitio web según la velocidad que desees: 2 Mbps de velocidad, 2.5 Mbps de velocidad ó 3Mbps de velocidad. Y al momento de la instalación una copia de comprobante de tu domicilio, una copia de tu credencial de elector y firmar el contrato.
+                </p>
+              </div>
+            </li>
+
+            <li data-aos="fade-up" data-aos-delay="500">
+              <i class="bx bx-help-circle icon-help"></i> <a data-toggle="collapse" href="#faq-list-5" class="collapsed">¿En que tiempo puedo tener mi instalación? <i class="bx bx-chevron-down icon-show"></i><i class="bx bx-chevron-up icon-close"></i></a>
+              <div id="faq-list-6" class="collapse" data-parent=".faq-list">
+                <p align="justify">
+                  Una vez que hayas programado tu instalación ingresando todos tus datos, de inmediato nos pondremos en contacto contigo para confirmarte el día que se hará tu instalación, en promedio es en un lapso de 10 días hábiles después de que ingresaste tus datos, y el tiempo en que nuestros técnicos instalan el equipo en tu domicilio es de aproximadamente 2 horas.
+                </p>
+              </div>
+            </li>
+
+          </ul>
+        </div>
+
+      </div>
+    </section><!-- Fin Preguntas Frecuentes -->
+
+    <!-- ======= Contact Section ======= -->
+    <section id="contact" class="contact">
+      <div class="container" data-aos="fade-up">
+
+        <div class="section-title">
+          <h2>Contactanos</h2>
+          <p>Mandanos un <a href="{{ url_for('contacto') }}">Mensaje</a> con la duda o proyecto que quieras llevar acabo.</p>
+        </div>
+
+        <div class="row">
+
+          <div class="col-lg-5 d-flex align-items-stretch">
+
+
+          </div>
+
+          <div class="col-lg-12 mt-5 mt-lg-0 d-flex align-items-stretch">
+            <div class="info">
+              <div class="address">
+                <i class="icofont-google-map"></i>
+                <h4>Dirección:</h4>
+                <p>Avenida Juarez #2925, Piso 22 Oficina 2201-1, Col. La Paz. Puebla, Pue.</p>
+              </div>
+
+              <div class="email">
+                <i class="icofont-envelope"></i>
+                <h4>Correo:</h4>
+                  <a href="mailto:contacto@blacom.com.mx"><p>contacto@blacom.com.mx</p></a>
+              </div>
+
+              <div class="phone">
+                <i class="icofont-phone"></i>
+                <h4>Telefono:</h4>
+                <p><img src="{{ url_for('static', filename='imagenes/retro.svg') }}" style="width:15px;height:15px;">  (222) 641 3505
+                   <img src="{{ url_for('static', filename='imagenes/whatsapp.svg') }}" style="width:15px;height:15px;">  (222) 313 9048</p>
+              </div>
+
+              <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d15084.946380423215!2d-98.222209!3d19.0533325!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xe32e1db431627949!2sBLACOM!5e0!3m2!1ses-419!2smx!4v1581435417920!5m2!1ses-419!2smx" frameborder="0" style="border:0; width: 100%; height: 290px;" allowfullscreen></iframe>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section><!-- End Contact Section -->
+
+  </main><!-- End #main -->
+{% endblock %}

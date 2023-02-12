@@ -1,0 +1,88 @@
+
+/* Formulario */
+form label {
+  font-size: 1.2em;
+  font-weight: bold;
+  display: block;
+  padding: 10px 0;
+}
+
+form input#nombre,
+form input#correo,
+form input#direccion,
+form input#celular,
+form input#municipio,
+form input#codigo,
+form input#fecha,
+form input#asunto {
+  width: 250px;
+  background-color: #fafafa;
+  -webkit-border-radius: 3px;  
+     -moz-border-radius: 3px;  
+          border-radius: 3px;
+  border: 1px solid #2559a6;
+  padding: 5px;
+  font-size: 1.1em;
+}
+
+form select#banda,
+form select#plan,
+form select#ciudad{
+  background: transparent;
+   border: 1px solid #2559a6;
+   font-size: 14px;
+   height: 30px;
+   padding: 5px;
+   width: 250px;
+}
+
+form textarea#mensaje {
+  width: 320px;
+  height: 200px;
+  background-color: #fafafa;
+  -webkit-border-radius: 3px;  
+     -moz-border-radius: 3px;  
+          border-radius: 3px;
+  border: 1px solid #2559a6;
+  margin-bottom: 10px;
+  padding: 5px;
+  font-size: 1.1em;
+}
+
+form input#enviar {
+  display: block;
+  -webkit-border-radius: 6px;
+     -moz-border-radius: 6px;
+          border-radius: 6px;
+  border:1px solid #2559a6;
+  padding: 10px;
+  font-weight: 600;
+  text-align: center;
+  color: #ffffff;
+  background-color: #2559a6;
+  background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #2559a6), color-stop(100%, #2559a6));
+  background-image: -webkit-linear-gradient(top, #2559a6, #2559a6);
+  background-image: -moz-linear-gradient(top, #2559a6, #2559a6);
+  background-image: -ms-linear-gradient(top, #2559a6, #2559a6);
+  background-image: -o-linear-gradient(top, #2559a6, #2559a6);
+  background-image: linear-gradient(top, #2559a6, #2559a6);filter:progid:DXImageTransform.Microsoft.gradient(GradientType=0,startColorstr=#2559a6, endColorstr=#2559a6);
+}
+
+form input#enviar:hover{
+  cursor: pointer;
+  border:1px solid #5087d7;
+  background-color: #dbdbdb;
+  background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #5087d7), color-stop(100%, #5087d7));
+  background-image: -webkit-linear-gradient(top, #5087d7, #5087d7);
+  background-image: -moz-linear-gradient(top, #5087d7, #5087d7);
+  background-image: -ms-linear-gradient(top, #5087d7, #5087d7);
+  background-image: -o-linear-gradient(top, #5087d7, #5087d7);
+  background-image: linear-gradient(top, #5087d7, #5087d7);filter:progid:DXImageTransform.Microsoft.gradient(GradientType=0,startColorstr=#5087d7, endColorstr=#5087d7);
+}
+
+/* Mensaje de error */
+.flash {
+  background-color: #FBB0B0;
+  padding: 10px;
+  width: 400px;
+}

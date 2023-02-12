@@ -1,0 +1,47 @@
+{% extends "layout-paginas.html" %}
+
+{% block content %}
+
+<!-- ======= Factibilidad ======= -->
+    <section id="portfolio-details" class="portfolio-details">
+      <div class="container">
+        <h2>FACTIBILIDAD</h2>
+        <div class="portfolio-description">
+          <h2>¡Verifica la disponibilidad del servicio!</h2>
+          <p align="justify">
+            Verificar tu factibilidad, para saber si tenemos cobertura en tu zona.
+          </p>
+          <br>
+          <p>
+            <i class="bx bx-check"></i><b>Coloca tu Codigo Postal</b><br><br>
+            <i class="bx bx-check"></i><b>Inmediatamente te arrojará el resultado</b><br><br>
+            <i class="bx bx-check"></i><b>Si tu Codigo Postal aparece, tenemos servicio</b><br><br>
+            <i class="bx bx-check"></i><b>Si tu Codigo Postal no aparece, posiblemente no tenga cobertura</b><br><br>
+            <i class="bx bx-check"></i><b>Si el Codigo Postal es vecino, pero no aparece el tuyo en concreto preguntanos y lo resolveremos</b><br><br>
+          </p>
+          <br>
+          <br>
+        </div>
+
+      </div>
+    </section>
+<!-- Fin Factibilidad -->
+
+  <footer id="footer-fact">
+  <div class="footer-newsletter">
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-lg-6">
+            <h4>Coloca tu Codigo Postal</h4>
+              <div align="center">
+                <input type="text" name="search" id="search" placeholder="Ejemplo: 72000" class="form-control" />
+              </div>
+                <ul class="list-group" id="result"></ul>
+                <br>
+          </div>
+        </div>
+      </div>
+  </div>
+  </footer>
+
+{% endblock %}

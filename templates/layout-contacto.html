@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+  <title>BLACOM | Contacto</title>
+  <meta content="" name="descriptison">
+  <meta content="" name="keywords">
+
+  <!-- Icono de Favorito -->
+  <link rel="icon" href="{{ url_for('static', filename='imagenes/l1.png') }}">
+
+  <!-- Google Fuentes -->
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Jost:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
+
+  <!-- Archivos CSS -->
+  <link rel="stylesheet" href="{{ url_for('static', filename='assets/vendor/bootstrap/css/bootstrap.min.css') }}">
+  <link rel="stylesheet" href="{{ url_for('static', filename='assets/vendor/icofont/icofont.min.css') }}">
+  <link rel="stylesheet" href="{{ url_for('static', filename='assets/vendor/boxicons/css/boxicons.min.css') }}">
+  <link rel="stylesheet" href="{{ url_for('static', filename='assets/vendor/remixicon/remixicon.css') }}">
+  <link rel="stylesheet" href="{{ url_for('static', filename='assets/vendor/venobox/venobox.css') }}">
+  <link rel="stylesheet" href="{{ url_for('static', filename='assets/vendor/owl.carousel/assets/owl.carousel.min.css') }}">
+  <link rel="stylesheet" href="{{ url_for('static', filename='assets/vendor/aos/aos.css') }}">
+
+  <link rel="stylesheet" href="{{ url_for('static', filename='assets/css/style.css') }}">
+    <!-- estilo contacto -->
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/contacto.css') }}">
+</head>
+<body>
+<!-- ======= Header ======= -->
+  <header id="header" class="fixed-top header-inner-pages">
+    <div class="container d-flex align-items-center">
+
+      <a href="/" class="logo mr-auto"><img src="{{ url_for('static', filename='imagenes/l1.1.png') }}" alt="" class="img-fluid"></a>
+
+      <nav class="nav-menu d-none d-lg-block">
+        <ul>
+          <li class="drop-down"><a href="">Soluciones</a>
+            <ul>
+              <li><a href="{{ url_for('diseno') }}">Diseño de Red</a></li>
+              <li class="drop-down"><a href="{{ url_for('cobertura') }}">Cobertura</a>
+                <ul>
+                  <li><a href="{{ url_for('factibilidad') }}">Factibilidad</a></li>
+                  <li><a href="{{ url_for('soporte') }}">Soporte Tecnico</a></li>
+                </ul>
+              </li>
+              <li class="drop-down"><a href="#">Internet</a>
+                <ul>
+                  <li><a href="{{ url_for('residencial') }}">Residencial</a></li>
+                  <li><a href="{{ url_for('empresarial') }}">Empresarial</a></li>
+                  <li><a href="{{ url_for('dedicado') }}">Dedicado</a></li>
+                </ul>
+              </li>
+              <li><a href="{{ url_for('comunicaciones') }}">Comunicaciones Unificadas</a></li>
+              <li><a href="{{ url_for('isp') }}">ISP</a></li>
+              <li><a href="{{ url_for('telefonia') }}">Servidores de Telefonia</a></li>
+              <li><a href="{{ url_for('vigilancia') }}">Vigilancia IP</a></li>
+            </ul>
+          </li>
+
+        </ul>
+      </nav><!-- .nav-menu -->
+
+      <a href="/" class="get-started-btn scrollto">Regresar</a>
+
+    </div>
+  </header><!-- End Header -->
+
+  <main id="main">
+
+    <!-- ======= Barra de Navegacion ======= -->
+    <section id="breadcrumbs" class="breadcrumbs">
+      <div class="container">
+
+        <ol>
+          <li><a href="/">Inicio</a></li>
+          <li>Contacto</li>
+        </ol>
+        <h2 align="center">¡Coloca tu mensaje y nos pondremos en contacto contigo!</h2>
+
+      </div>
+    </section><!-- Fin Barra de Navegacion -->
+<br>
+   <br>
+
+        <div class="container">
+        {% block content %}
+        {% endblock %}
+        </div>
+<br>
+  <br>
+  <br>
+<!-- ======= Incio Footer ======= -->
+  <footer id="footer">
+
+    <div class="footer-top">
+      <div class="container">
+        <div class="row">
+
+          <div class="col-lg-3 col-md-6 footer-contact">
+            <h3>BLACOM</h3>
+            <p>
+              Avenida Juarez #2925 <br>
+              Piso 22 Oficina 2201-1<br>
+              Col. La Paz. Puebla, Pue. <br><br>
+              <strong>Telefono:</strong> (222) 641 3505<br>
+              <strong>Whatsapp:</strong> (222) 313 9048<br>
+              <strong>Correo:</strong> contacto@blacom.com.mx<br>
+            </p>
+          </div>
+
+          <div class="col-lg-3 col-md-6 footer-links">
+            <h4>Referencias</h4>
+            <ul>
+              <li><i class="bx bx-chevron-right"></i> <a href="#">Incio</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#">Nosotros</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#">Servicios</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#">Terminos y Condiciones</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#">Paquetes</a></li>
+            </ul>
+          </div>
+
+          <div class="col-lg-3 col-md-6 footer-links">
+            <h4>Otros Servicios</h4>
+            <ul>
+              <li><i class="bx bx-chevron-right"></i> <a href="#">Desarrollo de Red</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#">ISP</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#">Telefonia</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#">Soporte</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#">Router</a></li>
+            </ul>
+          </div>
+
+          <div class="col-lg-3 col-md-6 footer-links">
+            <h4>Redes Sociales</h4>
+            <p>Forma parte de la comunidad</p>
+            <div class="social-links mt-3">
+              <a href="http://www.facebook.com/Blacominternetycomunicacion" class="facebook"><i class="bx bxl-facebook"></i></a>
+              <a href="http://www.instagram.com/Blacominternetycomunicacion" class="instagram"><i class="bx bxl-instagram"></i></a>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+    <div class="container footer-bottom clearfix">
+      <div class="copyright">
+        &copy; Copyright <strong><span>BLACOM</span></strong>. Todos los derechos reservados
+      </div>
+      <div class="credits">
+        Hecho por <a href="http://www.blacom.com.mx/">BLACOM</a>
+      </div>
+    </div>
+  </footer><!-- Fin Footer -->
+
+  <a href="#" class="back-to-top"><i class="ri-arrow-up-line"></i></a>
+  <div id="preloader"></div>
+
+  <!-- Archivos JS -->
+  <script src="{{ url_for('static', filename='assets/vendor/jquery/jquery.min.js') }}" type="text/javascript"></script>
+  <script src="{{ url_for('static', filename='assets/vendor/bootstrap/js/bootstrap.bundle.min.js') }}" type="text/javascript"></script>
+  <script src="{{ url_for('static', filename='assets/vendor/jquery.easing/jquery.easing.min.js') }}" type="text/javascript"></script>
+  <script src="{{ url_for('static', filename='assets/vendor/php-email-form/validate.js') }}" type="text/javascript"></script>
+  <script src="{{ url_for('static', filename='assets/vendor/waypoints/jquery.waypoints.min.js') }}" type="text/javascript"></script>
+  <script src="{{ url_for('static', filename='assets/vendor/isotope-layout/isotope.pkgd.min.js') }}" type="text/javascript"></script>
+  <script src="{{ url_for('static', filename='assets/vendor/venobox/venobox.min.js') }}" type="text/javascript"></script>
+  <script src="{{ url_for('static', filename='assets/vendor/owl.carousel/owl.carousel.min.js') }}" type="text/javascript"></script>
+  <script src="{{ url_for('static', filename='assets/vendor/aos/aos.js') }}" type="text/javascript"></script>
+
+  <!-- Template Main JS File -->
+  <script src="{{ url_for('static', filename='assets/js/main.js') }}" type="text/javascript"></script>
+
+</body>
+</html>

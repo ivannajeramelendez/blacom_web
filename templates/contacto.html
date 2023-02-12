@@ -1,0 +1,51 @@
+{% extends "layout-contacto.html" %}
+
+{% block content %}
+
+  {% if success %}
+    <h2 align="center">TU MENSAJE FUE ENVIADO</h2>
+
+  {% else %}
+
+    <form action="{{ url_for('contacto') }}" method=post>
+      {{ form.hidden_tag() }}
+
+		<!-- Nombre -->
+		{% for message in form.nombre.errors %}
+		<div class="flash">{{ message }}</div>
+		{% endfor %}
+
+        {{ form.nombre.label }}
+        {{ form.nombre }}
+
+		<!-- Correo -->
+		{% for message in form.correo.errors %}
+      	<div class="flash">{{ message }}</div>
+    	{% endfor %}
+
+		{{ form.correo.label }}
+      	{{ form.correo }}
+
+        <!-- Asunto -->
+		{% for message in form.asunto.errors %}
+		<div class="flash">{{ message }}</div>
+		{% endfor %}
+
+        {{ form.asunto.label }}
+        {{ form.asunto }}
+
+		<!-- Mensaje -->
+		{% for message in form.mensaje.errors %}
+      	<div class="flash">{{ message }}</div>
+    	{% endfor %}
+
+      {{ form.mensaje.label }}
+      {{ form.mensaje }}
+
+		<!-- Envio -->
+      <br>
+      {{ form.enviar }}
+    </form>
+
+  {% endif %}
+{% endblock %}
